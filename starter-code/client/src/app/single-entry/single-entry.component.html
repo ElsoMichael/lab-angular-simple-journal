@@ -1,0 +1,10 @@
+<div>
+  <h1>Journal</h1>
+  <a [routerLink]="['']"> Back to list </a>
+  <div *ngIf="journal">
+    <h1>{{ journal.title }}</h1>
+    <p>{{ journal.date }}</p>
+    <hr>
+    <p>{{ journal.content }}</p>
+  </div>
+</div>
